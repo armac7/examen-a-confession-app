@@ -1,0 +1,106 @@
+// First Commandment
+Do I give God time every day in prayer?/I have not given God time every day in prayer.
+Do I seek to love Him with my whole heart?/I have not sought to love Him with my whole heart.
+Have I denied the existence of God?/I have denied the existence of God.
+Have I doubted or denied my faith?/I have doubted or denied my faith.
+Do I seek to surrender myself to God’s Word as taught by the Church?/I have not surrendered myself to God’s Word as taught by the Church.
+Have I ever received Communion in the state of mortal sin?/I have received Communion in the state of mortal sin.
+Have I rejected any Church teaching or denied that I was a Catholic?/I have rejected Church teaching or denied being Catholic.
+Does someone or something other than God influence my choices?/I have let someone or something other than God influence my choices.
+Have I deliberately withheld a mortal sin in Confession?/I have deliberately withheld a mortal sin in Confession.
+
+// Second Commandment
+Have I used God’s name in vain: lightly or carelessly?/I have used God’s name in vain: lightly or carelessly.
+Have I used the name of God in cursing or blasphemy?/I have used the name of God in cursing or blasphemy.
+Have I been angry with God?/I have been angry with God.
+Have I failed to keep the vows or promises made to God?/I have failed to keep vows or promises made to God.
+Have I wished evil upon anyone?/I have wished evil upon someone.
+Have I spoken irreverently about the Church, saints, or sacred things?/I have spoken irreverently about the Church, saints, or sacred things.
+Have I insulted a sacred person or abused a sacred object?/I have insulted a sacred person or abused a sacred object.
+Have I been disrespectful in Church?/I have been disrespectful in Church.
+Have I disobeyed legitimate Church authority?/I have disobeyed legitimate Church authority.
+
+// Third Commandment
+Have I deliberately missed Mass on Sundays or Holy Days of Obligation?/I have deliberately missed Mass on Sundays or Holy Days of Obligation.
+Am I habitually late or leave early from Mass without a good reason?/I have been habitually late or left early from Mass without good reason.
+Have I received a sacrament while in a state of mortal sin?/I have received a sacrament while in a state of mortal sin.
+Have I not kept Sunday as a day of rest and family time?/I have not kept Sunday as a day of rest and family time.
+Do I do needless work on Sunday?/I have done needless work on Sunday.
+Do I make others work on Sunday?/I have made others work on Sunday.
+Do I pay attention and remain reverent during Mass?/I have not paid attention or remained reverent during Mass.
+Do I perform penance every Friday, abstaining from meat or doing another penance?/I have neglected penance on Fridays.
+If 14 or older, did I abstain from meat on Ash Wednesday and Fridays of Lent?/I have not abstained from meat on Ash Wednesday or Fridays of Lent (when required).
+
+// Fourth Commandment
+Do I honor and obey my parents?/I have not honored or obeyed my parents.
+If under their care, did I obey reasonable requests from my parents?/I have disobeyed reasonable requests from my parents.
+Have I neglected the needs of my parents in old age or in their time of need?/I have neglected the needs of my parents in old age or in their time of need.
+Am I willing to help around the house without being nagged?/I have not helped around the house willingly.
+Do I get along with my brothers and sisters?/I have not gotten along with my brothers and sisters.
+Have I neglected duties to my spouse and children?/I have neglected duties to my spouse and children.
+Have I given my family good religious example?/I have not given my family good religious example.
+Do I try to bring peace into my home life?/I have not brought peace into my home life.
+Do I respect elders and those in legitimate authority?/I have not respected elders or those in legitimate authority.
+
+// Fifth Commandment
+Have I intentionally harmed or killed anyone?/I have intentionally harmed or killed someone.
+Have I been involved in abortion or encouraged it?/I have been involved in abortion or encouraged it.
+Have I been involved in euthanasia or assisted suicide?/I have been involved in euthanasia or assisted suicide.
+Have I been involved in suicide or encouraged it?/I have been involved in suicide or encouraged it.
+Have I been involved in violence or abuse?/I have been involved in violence or abuse.
+Have I been involved in self-harm?/I have harmed myself.
+Have I been involved in substance abuse?/I have abused substances.
+Have I been involved in addiction or dependency?/I have fallen into addiction or dependency.
+Have I neglected responsibilities that could harm others?/I have neglected responsibilities that endangered others.
+
+// Sixth Commandment
+Have I engaged in adultery?/I have committed adultery.
+Have I engaged in fornication?/I have committed fornication.
+Have I viewed pornography?/I have viewed pornography.
+Have I engaged in masturbation?/I have committed masturbation.
+Have I engaged in homosexual acts?/I have engaged in homosexual acts.
+Have I engaged in incestuous behavior?/I have engaged in incestuous behavior.
+Have I engaged in prostitution?/I have engaged in prostitution.
+Have I engaged in sexual harassment?/I have engaged in sexual harassment.
+Have I engaged in sexual abuse?/I have committed sexual abuse.
+
+// Seventh Commandment
+Have I stolen anything?/I have stolen.
+Have I cheated in any way?/I have cheated.
+Have I committed fraud?/I have committed fraud.
+Have I accepted or offered bribes?/I have accepted or offered bribes.
+Have I embezzled or misused property?/I have embezzled or misused property.
+Have I engaged in corruption?/I have engaged in corruption.
+Have I exploited others?/I have exploited others.
+Have I oppressed or unjustly treated others?/I have oppressed or unjustly treated others.
+Have I acted unjustly toward others?/I have acted unjustly toward others.
+// Eighth Commandment
+Have I lied or been dishonest?/I have lied or been dishonest.
+Have I gossiped about others?/I have gossiped.
+Have I slandered anyone?/I have slandered someone.
+Have I spread calumny?/I have spread calumny.
+Have I engaged in detraction?/I have engaged in detraction.
+Have I made rash judgments?/I have made rash judgments.
+Have I perjured myself or lied under oath?/I have lied under oath or perjured myself.
+Have I given false witness?/I have given false witness.
+Have I betrayed someone's trust?/I have betrayed someone's trust.
+// Ninth Commandment
+Have I coveted someone else's spouse?/I have coveted someone else’s spouse.
+Have I been envious of others?/I have been envious of others.
+Have I been jealous of another's success?/I have been jealous of another’s success.
+Have I been greedy?/I have been greedy.
+Have I placed material possessions above God?/I have placed material possessions above God.
+Have I engaged in idolatry?/I have engaged in idolatry.
+Have I acted selfishly against others?/I have acted selfishly against others.
+Have I been prideful or arrogant?/I have been prideful or arrogant.
+Have I been discontent with God's gifts?/I have been discontent with God’s gifts.
+// Tenth Commandment
+Have I coveted my neighbor's goods?/I have coveted my neighbor’s goods.
+Have I been envious of what others have?/I have been envious of what others have.
+Have I desired more than my fair share?/I have desired more than my fair share.
+Have I been greedy for possessions?/I have been greedy for possessions.
+Have I hoarded material goods?/I have hoarded material goods.
+Have I placed possessions before God?/I have placed possessions before God.
+Have I been selfish with what I have?/I have been selfish with what I have.
+Have I been proud or boastful about my wealth?/I have been proud or boastful about my wealth.
+Have I been discontent with God's providence?/I have been discontent with God’s providence.
