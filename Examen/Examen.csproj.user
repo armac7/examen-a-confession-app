@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="src\forms\ConfessionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="src\forms\CustomizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="src\forms\ExaminationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="src\forms\ExamenController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="src\forms\HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="src\forms\PrayerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
