@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -34,13 +35,22 @@ namespace Examen
             {
                 FlowLayoutPanel categoryPanel = new FlowLayoutPanel();
                 categoryPanel.Name = $"categoryPanel{i + 1}";
-                categoryPanel.Size = new Size(600, 400);
-                categoryPanel.Visible = (i == 0); // Only the first panel is visible initially
-                categoryPanel.FlowDirection = FlowDirection.TopDown; // stack vertically
-                categoryPanel.WrapContents = false;                  // don't wrap horizontally
-                categoryPanel.AutoScroll = true;                     // adds scrollbar if needed
-                categoryPanel.Dock = DockStyle.Fill;
-                categoryPanel.BorderStyle = BorderStyle.FixedSingle;
+                categoryPanel.Dock = DockStyle.Fill;       
+                categoryPanel.FlowDirection = FlowDirection.TopDown;
+                categoryPanel.WrapContents = false;          
+                categoryPanel.AutoScroll = true;           
+                categoryPanel.Visible = (i == 0);
+
+                // Handle resize to adjust children widths
+                categoryPanel.Resize += (s, ev) =>
+                {
+                    foreach (FlowLayoutPanel sinPanel in categoryPanel.Controls.OfType<FlowLayoutPanel>())
+                    {
+                        sinPanel.Width = categoryPanel.ClientSize.Width - categoryPanel.Padding.Horizontal;
+                        sinPanel.PerformLayout();
+                    }
+                };
+
                 _categoryPanels.Add(categoryPanel);
                 commandmentsPanel.Controls.Add(categoryPanel);
 
@@ -51,25 +61,25 @@ namespace Examen
                     Sins? sin = _sinsManager.searchID(sinID);
                     // if sin doesn't exist or the commandment isn't the same
                     if (sin == null || sin.Commandment != i + 1)
-                    {
                         break; // Move to the next commandment
-                    }
+                    
 
                     // creates the panel for the sin
                     FlowLayoutPanel sinPanel = new FlowLayoutPanel();
                     sinPanel.Name = $"sinPanel{sin.SinsID}";
                     sinPanel.BorderStyle = BorderStyle.FixedSingle;
-                    sinPanel.Width = categoryPanel.ClientSize.Width - 20; // initial width
-                    sinPanel.AutoSize = true;
+                    sinPanel.AutoSize = true;                 
                     sinPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+                    sinPanel.Dock = DockStyle.Top;            
+
 
                     // creates the controls for each sin
                     // checkbox for the sin
                     CheckBox sinCB = new CheckBox();
-                    sinCB.Name = $"sinCheckBox{sin.SinsID}";
-                    sinCB.Text = $"{sin.Sin}";
-                    sinCB.AutoSize = false; // disable auto-size
-                    sinCB.Width = sinPanel.ClientSize.Width - 10; // leave a little padding
+                    sinCB.Text = sin.Sin;
+                    sinCB.AutoSize = true;      // height adjusts automatically
+                    sinCB.Dock = DockStyle.Top; 
+                    //sinCB.Name = $"sinCheckBox{sin.SinsID}";
 
                     // checkbox if it is mortal
                     CheckBox mortalCB = new CheckBox();
@@ -135,6 +145,9 @@ namespace Examen
                     // increment the sinID.
                     sinID++;
                 } // end of while loop
+
+
+
             } // end of for loop
         } // end of constructor
 
@@ -206,24 +219,23 @@ namespace Examen
                         CheckBox? mortalCB = sinPanel.Controls.OfType<CheckBox>().FirstOrDefault(cb => cb.Name == $"mortalCheckBox{sin.SinsID}");
                         TextBox? timesTB = sinPanel.Controls.OfType<TextBox>().FirstOrDefault(tb => tb.Name == $"timesIn{sin.SinsID}");
                         DateTimePicker? datePicker = sinPanel.Controls.OfType<DateTimePicker>().FirstOrDefault(dp => dp.Name == $"date{sin.SinsID}");
+                        
                         if (mortalCB != null)
-                        {
                             sin.Mortal = mortalCB.Checked;
-                        }
                         if (timesTB != null)
                         {
                             if (int.TryParse(timesTB.Text, out int numTimes))
-                            {
                                 sin.NumTimes = numTimes;
-                            }
                             else
-                            {
                                 sin.NumTimes = 1; // default to 1 if parsing fails
-                            }
+                            
                         }
                         if (datePicker != null)
                         {
-                            sin.Date = DateOnly.FromDateTime(datePicker.Value);
+                            if (datePicker.Value > DateTime.Today)
+                                sin.Date = DateOnly.FromDateTime(DateTime.Today);
+                            else
+                                sin.Date = DateOnly.FromDateTime(datePicker.Value);
                         }
                     }
                 }
@@ -238,126 +250,26 @@ namespace Examen
             }
         }
 
-        /////////////// All of these button clicks just switch between panels ///////////////
-        private void firstButton_Click(object sender, EventArgs e)
+        private void showCommandment(object sender, EventArgs e) 
         {
-            for (int i = 0; i < _categoryPanels.Count; i++)
-            {
-                _categoryPanels[i].Visible = (i == 0);
-            }
-            currCategory = 0;
-        }
+            string commandment = ((Button)sender).Text;
+            int commandmentNumber = int.Parse(commandment[0].ToString()) - 1;
 
-        private void secondButton_Click(object sender, EventArgs e)
-        {
             for (int i = 0; i < _categoryPanels.Count; i++)
             {
-                _categoryPanels[i].Visible = (i == 1);
+                _categoryPanels[i].Visible = (i == commandmentNumber);
             }
-            currCategory = 1;
-        }
+            currCategory = commandmentNumber;
 
-        private void thirdButton_Click(object sender, EventArgs e)
-        {
-            for (int i = 0; i < _categoryPanels.Count; i++)
-            {
-                _categoryPanels[i].Visible = (i == 2);
-            }
-            currCategory = 2;
-        }
-
-        private void fourthButton_Click(object sender, EventArgs e)
-        {
-            for (int i = 0; i < _categoryPanels.Count; i++)
-            {
-                _categoryPanels[i].Visible = (i == 3);
-            }
-            currCategory = 3;
-        }
-
-        private void fifthButton_Click(object sender, EventArgs e)
-        {
-            for (int i = 0; i < _categoryPanels.Count; i++)
-            {
-                _categoryPanels[i].Visible = (i == 4);
-            }
-            currCategory = 4;
-        }
-
-        private void sixthButton_Click(object sender, EventArgs e)
-        {
-            for (int i = 0; i < _categoryPanels.Count; i++)
-            {
-                _categoryPanels[i].Visible = (i == 5);
-            }
-            currCategory = 5;
-        }
-
-        private void seventhButton_Click(object sender, EventArgs e)
-        {
-            for (int i = 0; i < _categoryPanels.Count; i++)
-            {
-                _categoryPanels[i].Visible = (i == 6);
-            }
-            currCategory = 6;
-        }
-
-        private void eightButton_Click(object sender, EventArgs e)
-        {
-            for (int i = 0; i < _categoryPanels.Count; i++)
-            {
-                _categoryPanels[i].Visible = (i == 7);
-            }
-            currCategory = 7;
-        }
-
-        private void ninthButton_Click(object sender, EventArgs e)
-        {
-            for (int i = 0; i < _categoryPanels.Count; i++)
-            {
-                _categoryPanels[i].Visible = (i == 8);
-            }
-            currCategory = 8;
-        }
-
-        private void tenthButton_Click(object sender, EventArgs e)
-        {
-            for (int i = 0; i < _categoryPanels.Count; i++)
-            {
-                _categoryPanels[i].Visible = (i == 9);
-            }
-            currCategory = 9;
+            _categoryPanels[commandmentNumber].PerformLayout();
+            _categoryPanels[commandmentNumber].Refresh();
         }
 
         private void helpButton_Click(object sender, EventArgs e)
         {
-            // plan to add an actual form here if time permits.
-            DialogResult result = MessageBox.Show("You're about to be sent to CatholicAnswers.com. Proceed?", "Help?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
-                {
-                    FileName = "https://www.catholic.com/search?q=how%20to%20examine%20your%20consciousness&l=en",
-                    UseShellExecute = true
-                });
-            }
+            HelpForm helpForm = new HelpForm();
+            helpForm.ShowDialog();
+            this.Show();
         }
-
-        //private void ExaminationForm_FormClosing(object sender, FormClosingEventArgs e)
-        //{
-        //    DialogResult result = MessageBox.Show("Are you sure you want to close the program?", "Exit Program", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-        //    if (result == DialogResult.No)
-        //    {
-        //        e.Cancel = true;
-        //    }
-        //}
-
-        //private void ExaminationForm_FormClosed(object sender, FormClosedEventArgs e)
-        //{
-        //    Application.Exit();
-        //}
-
     }
 }

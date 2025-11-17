@@ -107,6 +107,7 @@
             saveButton.TabIndex = 1;
             saveButton.Text = "Save to PDF";
             saveButton.UseVisualStyleBackColor = true;
+            saveButton.Click += saveButton_Click;
             // 
             // closeButton
             // 

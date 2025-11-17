@@ -31,8 +31,8 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
-            textBox1 = new TextBox();
-            button4 = new Button();
+            searchbox = new TextBox();
+            searchButton = new Button();
             button5 = new Button();
             SuspendLayout();
             // 
@@ -44,6 +44,7 @@
             button1.TabIndex = 0;
             button1.Text = "What is Confession?";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += getAnswer;
             // 
             // button2
             // 
@@ -53,6 +54,7 @@
             button2.TabIndex = 1;
             button2.Text = "Why do I need to confess my sins?";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += getAnswer;
             // 
             // button3
             // 
@@ -62,22 +64,24 @@
             button3.TabIndex = 2;
             button3.Text = "What is a Mortal Sin?";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += getAnswer;
             // 
-            // textBox1
+            // searchbox
             // 
-            textBox1.Location = new Point(12, 150);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(209, 23);
-            textBox1.TabIndex = 3;
+            searchbox.Location = new Point(12, 150);
+            searchbox.Name = "searchbox";
+            searchbox.Size = new Size(209, 23);
+            searchbox.TabIndex = 3;
             // 
-            // button4
+            // searchButton
             // 
-            button4.Location = new Point(227, 150);
-            button4.Name = "button4";
-            button4.Size = new Size(124, 23);
-            button4.TabIndex = 4;
-            button4.Text = "Search";
-            button4.UseVisualStyleBackColor = true;
+            searchButton.Location = new Point(227, 150);
+            searchButton.Name = "searchButton";
+            searchButton.Size = new Size(124, 23);
+            searchButton.TabIndex = 4;
+            searchButton.Text = "Search";
+            searchButton.UseVisualStyleBackColor = true;
+            searchButton.Click += searchButton_Click;
             // 
             // button5
             // 
@@ -87,6 +91,7 @@
             button5.TabIndex = 5;
             button5.Text = "OK";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += okButton_Click;
             // 
             // HelpForm
             // 
@@ -94,14 +99,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(364, 251);
             Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(textBox1);
+            Controls.Add(searchButton);
+            Controls.Add(searchbox);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximumSize = new Size(380, 290);
             MinimumSize = new Size(380, 290);
             Name = "HelpForm";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Examen - Help";
             ResumeLayout(false);
             PerformLayout();
@@ -112,8 +119,8 @@
         private Button button1;
         private Button button2;
         private Button button3;
-        private TextBox textBox1;
-        private Button button4;
+        private TextBox searchbox;
+        private Button searchButton;
         private Button button5;
     }
 }

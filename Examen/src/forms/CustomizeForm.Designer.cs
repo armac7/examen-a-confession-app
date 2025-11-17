@@ -85,6 +85,7 @@
             Controls.Add(guideCB);
             Controls.Add(prayerCB);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximumSize = new Size(345, 165);
             MinimumSize = new Size(345, 165);
             Name = "CustomizeForm";

@@ -33,50 +33,50 @@ namespace Examen
         private void confessButton_Click_1(object sender, EventArgs e)
         {
             // if first time pressed, just run exam
- 
-                // if this is the first examination
-                if (firstExamen)
+
+            // if this is the first examination
+            if (firstExamen)
+            {
+                this.Hide();
+                examManager.Run(_data);
+
+                // if user decides to quit during exam, exit app
+                if (_data.Quit)
                 {
-                    this.Hide(); 
-                    examManager.Run(_data); 
+                    Application.Exit();
+                    return;
+                }
 
-                    // if user decides to quit during exam, exit app
-                    if (_data.Quit)
-                    {
-                        Application.Exit();
-                        return;
-                    }
-
-                    // if no sins selected, inform user and return to main menu
-                    if ((_data.SelectedSins == null || _data.SelectedSins.Count == 0))
-                    {
-                        MessageBox.Show("No sins were selected. Returning to main menu.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        firstExamen = true;
-                        this.Show();
-                        return;
-                    }
-
-
-                    // if sins are selected, run customization
-                    customizationManager.Run(_data);
-                    firstExamen = false;
-                } 
-                else // else confirm with user to start new exam
+                // if no sins selected, inform user and return to main menu
+                if ((_data.SelectedSins == null || _data.SelectedSins.Count == 0))
                 {
-                    DialogResult result = MessageBox.Show("Are you sure you want to start a new examination? \nNOTE: Your previous selections will be lost.", "Confirm New Examination", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                    if (result == DialogResult.Yes)
-                    {
-                        _data = new ExamenData(); // Reset data
-                        firstExamen = true;
-                        this.Hide();
-                        examManager.Run(_data);
-                    } // end of if
-                    else
-                    {
-                        this.Show();
-                        return;
-                    } // end of else
+                    MessageBox.Show("No sins were selected. Returning to main menu.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    firstExamen = true;
+                    this.Show();
+                    return;
+                }
+
+
+                // if sins are selected, run customization
+                customizationManager.Run(_data);
+                firstExamen = false;
+            }
+            else // else confirm with user to start new exam
+            {
+                DialogResult result = MessageBox.Show("Are you sure you want to start a new examination? \nNOTE: Your previous selections will be lost.", "Confirm New Examination", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    _data = new ExamenData(); // Reset data
+                    firstExamen = true;
+                    this.Hide();
+                    examManager.Run(_data);
+                } // end of if
+                else
+                {
+                    this.Show();
+                    return;
                 } // end of else
+            } // end of else
 
 
             RunPrayerIfNeeded();
@@ -84,7 +84,7 @@ namespace Examen
         } /* end of confessButton_Click_1 */
 
         // helper function for confessionButton_Click_1
-        private void RunPrayerIfNeeded() 
+        private void RunPrayerIfNeeded()
         {
             if (!_data.AddPrayer)
                 return;
@@ -121,7 +121,15 @@ namespace Examen
 
         private void prayersButton_Click(object sender, EventArgs e)
         {
-            prayerManager.Run(_data); 
+            prayerManager.Run(_data);
+        }
+
+        private void infoButton_Click(object sender, EventArgs e)
+        {
+            HelpForm helpForm = new HelpForm();
+            this.Hide();
+            helpForm.ShowDialog();
+            this.Show();
         }
     } /* end of ExamenController class */
 
