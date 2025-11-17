@@ -74,6 +74,7 @@
             infoButton.TabIndex = 3;
             infoButton.Text = "More Information";
             infoButton.UseVisualStyleBackColor = true;
+            infoButton.Click += infoButton_Click;
             // 
             // prayersButton
             // 
@@ -107,6 +108,7 @@
             Controls.Add(confessButton);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "ExamenController";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Examen";

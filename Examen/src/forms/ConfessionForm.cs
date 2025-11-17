@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iText.Kernel.Pdf;
+using iText.Layout;
+using iText.Layout.Element;
 
 namespace Examen.src.forms
 {
@@ -22,10 +25,11 @@ namespace Examen.src.forms
                            "The Confessor will then present to you absolution which will end with the Sign of the Cross and dismissal.",
                            "Now, just leave the confessional and do your penance with a contrite heart, meditating on what you're asking!"};
         private bool _suppressCloseConfirmation = false; // flag for closing
-
+        private StringBuilder sb;
         public ConfessionForm(ExamenData data)
         {
             InitializeComponent();
+            sb = new StringBuilder();
             this._data = data;
         }
 
@@ -37,8 +41,6 @@ namespace Examen.src.forms
                 MessageBox.Show("CRITICAL ERROR", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
-            StringBuilder sb = new StringBuilder();
 
             // Entrance
             if (_data.AddGuide)
@@ -118,7 +120,7 @@ namespace Examen.src.forms
         private void ConfessionForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (_suppressCloseConfirmation == false)
-            { 
+            {
                 DialogResult result = MessageBox.Show("Are you sure you want to close the program?", "Exit Program", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                 if (result == DialogResult.No)
@@ -127,6 +129,30 @@ namespace Examen.src.forms
                 }
                 else
                     _data.Quit = true;
+            }
+        }
+
+        private void saveButton_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog saveDialog = new SaveFileDialog())
+            {
+                saveDialog.Filter = "PDF files (*.pdf)|*.pdf";
+                saveDialog.Title = "Save PDF";
+
+                if (saveDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string filePath = saveDialog.FileName;
+
+                    // Save PDF
+                    using (PdfWriter writer = new PdfWriter(filePath))
+                    using (PdfDocument pdf = new PdfDocument(writer))
+                    using (Document document = new Document(pdf))
+                    {
+                        document.Add(new Paragraph(sb.ToString()));
+                    }
+
+                    MessageBox.Show("PDF saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
     }

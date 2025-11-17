@@ -82,63 +82,63 @@
             resources.ApplyResources(tenthButton, "tenthButton");
             tenthButton.Name = "tenthButton";
             tenthButton.UseVisualStyleBackColor = true;
-            tenthButton.Click += tenthButton_Click;
+            tenthButton.Click += showCommandment;
             // 
             // ninthButton
             // 
             resources.ApplyResources(ninthButton, "ninthButton");
             ninthButton.Name = "ninthButton";
             ninthButton.UseVisualStyleBackColor = true;
-            ninthButton.Click += ninthButton_Click;
+            ninthButton.Click += showCommandment;
             // 
             // eightButton
             // 
             resources.ApplyResources(eightButton, "eightButton");
             eightButton.Name = "eightButton";
             eightButton.UseVisualStyleBackColor = true;
-            eightButton.Click += eightButton_Click;
+            eightButton.Click += showCommandment;
             // 
             // seventhButton
             // 
             resources.ApplyResources(seventhButton, "seventhButton");
             seventhButton.Name = "seventhButton";
             seventhButton.UseVisualStyleBackColor = true;
-            seventhButton.Click += seventhButton_Click;
+            seventhButton.Click += showCommandment;
             // 
             // sixthButton
             // 
             resources.ApplyResources(sixthButton, "sixthButton");
             sixthButton.Name = "sixthButton";
             sixthButton.UseVisualStyleBackColor = true;
-            sixthButton.Click += sixthButton_Click;
+            sixthButton.Click += showCommandment;
             // 
             // fifthButton
             // 
             resources.ApplyResources(fifthButton, "fifthButton");
             fifthButton.Name = "fifthButton";
             fifthButton.UseVisualStyleBackColor = true;
-            fifthButton.Click += fifthButton_Click;
+            fifthButton.Click += showCommandment;
             // 
             // fourthButton
             // 
             resources.ApplyResources(fourthButton, "fourthButton");
             fourthButton.Name = "fourthButton";
             fourthButton.UseVisualStyleBackColor = true;
-            fourthButton.Click += fourthButton_Click;
+            fourthButton.Click += showCommandment;
             // 
             // thirdButton
             // 
             resources.ApplyResources(thirdButton, "thirdButton");
             thirdButton.Name = "thirdButton";
             thirdButton.UseVisualStyleBackColor = true;
-            thirdButton.Click += thirdButton_Click;
+            thirdButton.Click += showCommandment;
             // 
             // secondButton
             // 
             resources.ApplyResources(secondButton, "secondButton");
             secondButton.Name = "secondButton";
             secondButton.UseVisualStyleBackColor = true;
-            secondButton.Click += secondButton_Click;
+            secondButton.Click += showCommandment;
             // 
             // firstButton
             // 
@@ -146,7 +146,7 @@
             firstButton.FlatAppearance.BorderColor = Color.FromArgb(128, 128, 255);
             firstButton.Name = "firstButton";
             firstButton.UseVisualStyleBackColor = true;
-            firstButton.Click += firstButton_Click;
+            firstButton.Click += showCommandment;
             // 
             // flowLayoutPanel12
             // 
@@ -243,6 +243,5 @@
         private TableLayoutPanel tableLayoutPanel2;
         private Button quitButton;
         private Panel commandmentsPanel;
-
     }
 }
