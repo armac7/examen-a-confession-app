@@ -115,7 +115,7 @@
             closeButton.Name = "closeButton";
             closeButton.Size = new Size(170, 43);
             closeButton.TabIndex = 2;
-            closeButton.Text = "Close Program";
+            closeButton.Text = "Quit";
             closeButton.UseVisualStyleBackColor = true;
             closeButton.Click += closeButton_Click;
             // 
@@ -146,6 +146,7 @@
             Controls.Add(flowLayoutPanel3);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(flowLayoutPanel2);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MinimumSize = new Size(820, 500);
             Name = "ConfessionForm";
             StartPosition = FormStartPosition.CenterParent;

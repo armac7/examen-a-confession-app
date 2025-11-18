@@ -148,7 +148,7 @@ namespace Examen.src.forms
                     using (PdfDocument pdf = new PdfDocument(writer))
                     using (Document document = new Document(pdf))
                     {
-                        document.Add(new Paragraph(sb.ToString()));
+                        document.Add(new Paragraph(richTextBox1.Text));
                     }
 
                     MessageBox.Show("PDF saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);

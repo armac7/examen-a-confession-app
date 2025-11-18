@@ -40,6 +40,7 @@ namespace Examen
                 categoryPanel.WrapContents = false;          
                 categoryPanel.AutoScroll = true;           
                 categoryPanel.Visible = (i == 0);
+                categoryPanel.Padding = new Padding(0, 0, SystemInformation.VerticalScrollBarWidth, 0);
 
                 // Handle resize to adjust children widths
                 categoryPanel.Resize += (s, ev) =>
@@ -62,15 +63,16 @@ namespace Examen
                     // if sin doesn't exist or the commandment isn't the same
                     if (sin == null || sin.Commandment != i + 1)
                         break; // Move to the next commandment
-                    
+
 
                     // creates the panel for the sin
                     FlowLayoutPanel sinPanel = new FlowLayoutPanel();
                     sinPanel.Name = $"sinPanel{sin.SinsID}";
                     sinPanel.BorderStyle = BorderStyle.FixedSingle;
-                    sinPanel.AutoSize = true;                 
+                    sinPanel.AutoSize = true;
                     sinPanel.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-                    sinPanel.Dock = DockStyle.Top;            
+                    sinPanel.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top;
+                    sinPanel.Width = categoryPanel.ClientSize.Width - categoryPanel.Padding.Horizontal;
 
 
                     // creates the controls for each sin

@@ -7,19 +7,31 @@
       "RelativeMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|solutionrelative:examen\\src\\forms\\confessionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|c:\\users\\offic\\onedrive\\documents\\coding\\examen\\examen\\examen\\src\\forms\\confessionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\examen\\src\\forms\\confessionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|solutionrelative:examen\\src\\forms\\confessionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|c:\\users\\offic\\onedrive\\documents\\coding\\examen\\examen\\examen\\src\\forms\\prayerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\examen\\src\\forms\\examinationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|solutionrelative:examen\\src\\forms\\examinationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|c:\\users\\offic\\onedrive\\documents\\coding\\examen\\examen\\examen\\src\\forms\\examencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|solutionrelative:examen\\src\\forms\\examencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|c:\\users\\offic\\onedrive\\documents\\coding\\examen\\examen\\examen\\src\\forms\\examencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|solutionrelative:examen\\src\\forms\\examencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\examen\\src\\forms\\prayerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|solutionrelative:examen\\src\\forms\\prayerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|c:\\users\\offic\\onedrive\\documents\\coding\\examen\\examen\\examen\\src\\forms\\customizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\examen\\src\\forms\\customizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|solutionrelative:examen\\src\\forms\\customizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|c:\\users\\offic\\onedrive\\documents\\coding\\examen\\examen\\examen\\src\\forms\\helpform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\examen\\src\\forms\\helpform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9EB2E7B3-DCA7-4277-A4A5-657BA3765E4B}|Examen\\Examen.csproj|solutionrelative:examen\\src\\forms\\helpform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -30,11 +42,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExamenController.cs",
+              "DocumentMoniker": "C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\Examen\\src\\forms\\ExamenController.cs",
+              "RelativeDocumentMoniker": "Examen\\src\\forms\\ExamenController.cs",
+              "ToolTip": "C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\Examen\\src\\forms\\ExamenController.cs",
+              "RelativeToolTip": "Examen\\src\\forms\\ExamenController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T00:03:19.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExamenController.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\Examen\\src\\forms\\ExamenController.cs",
+              "RelativeDocumentMoniker": "Examen\\src\\forms\\ExamenController.cs",
+              "ToolTip": "C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\Examen\\src\\forms\\ExamenController.cs [Design]",
+              "RelativeToolTip": "Examen\\src\\forms\\ExamenController.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T00:03:14.903Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExaminationForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\Examen\\src\\forms\\ExaminationForm.cs",
+              "RelativeDocumentMoniker": "Examen\\src\\forms\\ExaminationForm.cs",
+              "ToolTip": "C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\Examen\\src\\forms\\ExaminationForm.cs [Design]",
+              "RelativeToolTip": "Examen\\src\\forms\\ExaminationForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T00:04:30.728Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -56,46 +105,43 @@
               "RelativeDocumentMoniker": "Examen\\src\\forms\\ConfessionForm.cs",
               "ToolTip": "C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\Examen\\src\\forms\\ConfessionForm.cs",
               "RelativeToolTip": "Examen\\src\\forms\\ConfessionForm.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAuwIEAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAmwJcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T18:40:17.333Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "PrayerForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\Examen\\src\\forms\\PrayerForm.cs",
               "RelativeDocumentMoniker": "Examen\\src\\forms\\PrayerForm.cs",
               "ToolTip": "C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\Examen\\src\\forms\\PrayerForm.cs [Design]",
               "RelativeToolTip": "Examen\\src\\forms\\PrayerForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T18:34:53.59Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-17T18:34:53.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "HelpForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\Examen\\src\\forms\\HelpForm.cs",
               "RelativeDocumentMoniker": "Examen\\src\\forms\\HelpForm.cs",
               "ToolTip": "C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\Examen\\src\\forms\\HelpForm.cs [Design]",
               "RelativeToolTip": "Examen\\src\\forms\\HelpForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T18:34:44.106Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-17T18:34:44.106Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "CustomizeForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\Examen\\src\\forms\\CustomizeForm.cs",
               "RelativeDocumentMoniker": "Examen\\src\\forms\\CustomizeForm.cs",
               "ToolTip": "C:\\Users\\offic\\OneDrive\\Documents\\Coding\\Examen\\Examen\\Examen\\src\\forms\\CustomizeForm.cs [Design]",
               "RelativeToolTip": "Examen\\src\\forms\\CustomizeForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T18:34:25.783Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-17T18:34:25.783Z"
             }
           ]
         }
