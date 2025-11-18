@@ -1,6 +1,7 @@
-using Examen.src.forms;
 using Examen;
+using Examen.src.forms;
 using System.Diagnostics.Eventing.Reader;
+using System.Windows.Forms;
 
 namespace Examen
 {
@@ -127,9 +128,7 @@ namespace Examen
         private void infoButton_Click(object sender, EventArgs e)
         {
             HelpForm helpForm = new HelpForm();
-            this.Hide();
             helpForm.ShowDialog();
-            this.Show();
         }
     } /* end of ExamenController class */
 

@@ -34,6 +34,8 @@
             infoButton = new Button();
             prayersButton = new Button();
             quitButton = new Button();
+            logo = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)logo).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -58,7 +60,7 @@
             // 
             // confessButton
             // 
-            confessButton.Location = new Point(30, 147);
+            confessButton.Location = new Point(30, 249);
             confessButton.Name = "confessButton";
             confessButton.Size = new Size(224, 58);
             confessButton.TabIndex = 2;
@@ -68,7 +70,7 @@
             // 
             // infoButton
             // 
-            infoButton.Location = new Point(30, 275);
+            infoButton.Location = new Point(30, 377);
             infoButton.Name = "infoButton";
             infoButton.Size = new Size(105, 47);
             infoButton.TabIndex = 3;
@@ -78,7 +80,7 @@
             // 
             // prayersButton
             // 
-            prayersButton.Location = new Point(30, 211);
+            prayersButton.Location = new Point(30, 313);
             prayersButton.Name = "prayersButton";
             prayersButton.Size = new Size(224, 58);
             prayersButton.TabIndex = 4;
@@ -88,7 +90,7 @@
             // 
             // quitButton
             // 
-            quitButton.Location = new Point(149, 275);
+            quitButton.Location = new Point(149, 377);
             quitButton.Name = "quitButton";
             quitButton.Size = new Size(105, 47);
             quitButton.TabIndex = 5;
@@ -96,12 +98,24 @@
             quitButton.UseVisualStyleBackColor = true;
             quitButton.Click += quitButton_Click;
             // 
+            // logo
+            // 
+            logo.BackgroundImageLayout = ImageLayout.Stretch;
+            logo.ImageLocation = "data/logo.png";
+            logo.Location = new Point(30, 12);
+            logo.Name = "logo";
+            logo.Size = new Size(224, 225);
+            logo.SizeMode = PictureBoxSizeMode.Zoom;
+            logo.TabIndex = 6;
+            logo.TabStop = false;
+            // 
             // ExamenController
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            ClientSize = new Size(279, 346);
+            ClientSize = new Size(283, 438);
+            Controls.Add(logo);
             Controls.Add(quitButton);
             Controls.Add(prayersButton);
             Controls.Add(infoButton);
@@ -112,6 +126,7 @@
             Name = "ExamenController";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Examen";
+            ((System.ComponentModel.ISupportInitialize)logo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -124,5 +139,6 @@
         private Button infoButton;
         private Button prayersButton;
         private Button quitButton;
+        private PictureBox logo;
     }
 }

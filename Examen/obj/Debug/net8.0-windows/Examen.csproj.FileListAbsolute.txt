@@ -49,3 +49,4 @@ C:\Users\offic\OneDrive\Documents\Coding\Examen\Examen\Examen\obj\Debug\net8.0-w
 C:\Users\offic\OneDrive\Documents\Coding\Examen\Examen\Examen\obj\Debug\net8.0-windows\Examen.csproj.Up2Date
 C:\Users\offic\OneDrive\Documents\Coding\Examen\Examen\Examen\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
 C:\Users\offic\OneDrive\Documents\Coding\Examen\Examen\Examen\bin\Debug\net8.0-windows\itext.bouncy-castle-adapter.dll
+C:\Users\offic\OneDrive\Documents\Coding\Examen\Examen\Examen\obj\Debug\net8.0-windows\Examen.Properties.Resources.resources
